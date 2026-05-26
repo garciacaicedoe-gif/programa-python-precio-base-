@@ -1,5 +1,7 @@
 # programa-python-precio-base-
 este es un  ejercicio de precios base y promociones de un negocio de comidas rápidas 
+
+
 menu = [
     ["Hamburguesa", "Comida Rápida", 12000],
     ["Pizza", "Comida Rápida", 15000],
@@ -24,7 +26,6 @@ def mostrar_promocion(menu, categoria_objetivo, umbral):
         nombre, categoria, precio_base = producto
         precio_final = calcular_precio_final(producto, categoria_objetivo, umbral)
         print(f"{nombre} ({categoria}) - Base: ${precio_base:.2f} -> Final: ${precio_final:.2f}")
-
 
 if __name__ == "__main__":
     # Ejemplo: aplicar promoción a la categoría 'Comida Rápida' para productos con precio > 13000
